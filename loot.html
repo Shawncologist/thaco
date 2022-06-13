@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Loot Divider</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="nav-left">
+      <div class="hex"><strong>&#x2B22;</strong></div>
+      <div class="logo"><a href="index.html">THACO</a></div>
+    </div>
+
+    <div class="nav-right">
+
+      <div class="dropdown">
+        <button class="dropbtn">Projects &#9660;
+          </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">RPG Tools &#9660;
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Almanac</a>
+          <a href="loot.html">Loot Divider</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="nav-icons">
+      <a href="#about"><span class="material-icons">help</span></a>
+      <a href="#news"><span class="material-icons">settings</span></a>
+    </div>
+  </div>
+</div>
+
+  <!-- - - - - - - -  M A I N C O N T A I N E R - - - -  -->
+  <div class="container-main">
+    <div class="calc-main">
+      <form action="index.html" method="post">
+        <div>
+          <p>How many people are sharing this loot?</p>
+          <select id="hundred" class="input-select"></select>
+        </div>
+        <p>How much currency needs to be divided up?</p>
+        <div class="input-container">
+          <span id="icon-input-cp" class="input-icon"><strong>CP: </strong></span>
+          <input id="input-cp" class="input-field currency" type="number" placeholder="">
+        </div>
+        <div class="input-container">
+          <span id="icon-input-sp" class="input-icon"><strong>SP: </strong></span>
+          <input id="input-sp" class="input-field currency" type="number" placeholder="">
+        </div>
+        <div class="input-container">
+          <span id="icon-input-ep" class="input-icon"><strong>EP: </strong></span>
+          <input id="input-ep" class="input-field currency" type="number" placeholder="">
+        </div>
+        <div class="input-container">
+          <span id="icon-input-gp" class="input-icon"><strong>GP: </strong></span>
+          <input id="input-gp" class="input-field currency" type="number" placeholder="">
+        </div>
+        <div class="input-container">
+          <span id="icon-input-pp" class="input-icon"><strong>PP: </strong></span>
+          <input id="input-pp" class="input-field currency" type="number" placeholder="">
+        </div>
+
+<button type="submit" class="btn"><strong>CALCULATE</strong></button>
+
+
+      </form>
+
+    </div>
+  </div>
+  <script src="apps.js" charset="utf-8"></script>
+</body>
+
+</html>
