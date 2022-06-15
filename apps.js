@@ -1,5 +1,17 @@
 
-let numPeople = "";
-for(let i=1; i<=100 ; i++) numPeople += `<option>${i}</option>`;
+// let numPeople = "";
+// for(let i=1; i<=100 ; i++) numPeople += `<option>${i}</option>`;
+//
+// document.querySelector("#hundred").innerHTML = numPeople;
 
-document.querySelector("#hundred").innerHTML = numPeople;
+
+let rooty = document.querySelector(':root');
+
+function setCssVar() {
+let colorPool = ['#F806CC','#47B5FF','#FFD24C','#00FFAB','#EB5353']
+let randomColorResult = "";
+randomColorResult += colorPool[Math.floor(Math.random() * colorPool.length)];
+ rooty.style.setProperty('--accent', randomColorResult);
+}
+
+window.onload = setCssVar; 
