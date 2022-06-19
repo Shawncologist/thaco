@@ -1,4 +1,8 @@
 
+
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
 // let numPeople = "";
 // for(let i=1; i<=100 ; i++) numPeople += `<option>${i}</option>`;
 //
@@ -14,4 +18,4 @@ randomColorResult += colorPool[Math.floor(Math.random() * colorPool.length)];
  rooty.style.setProperty('--accent', randomColorResult);
 }
 
-window.onload = setCssVar; 
+window.onload = setCssVar;
